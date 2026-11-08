@@ -1,0 +1,168 @@
+{
+  "lanes": {
+    "through": 2,
+    "inner_left": 1,
+    "off_left": 1,
+    "off_right": 1
+  },
+  "grid_scenarios": 2325,
+  "sweep_seconds": 0.0015965000056894496,
+  "share_best_by_left_share": {
+    "0.3": {
+      "ddi": 0.636,
+      "diamond": 0.156,
+      "turbo_roundabout": 0.208
+    },
+    "0.5": {
+      "ddi": 0.575,
+      "diamond": 0.21,
+      "turbo_roundabout": 0.214
+    },
+    "0.7": {
+      "ddi": 0.712,
+      "diamond": 0.13,
+      "turbo_roundabout": 0.157
+    }
+  },
+  "feasible_share": {
+    "diamond": 0.5053763440860215,
+    "ddi": 0.5909677419354838,
+    "turbo_roundabout": 0.29634408602150536
+  },
+  "reference": [
+    {
+      "case": "balanced",
+      "design": "diamond",
+      "max_vc": 0.78125,
+      "delay_s": 53.023521400605155,
+      "los": "D",
+      "capacity_reserve": 1.2799999999970169,
+      "nodes": {
+        "terminal": 0.78125
+      }
+    },
+    {
+      "case": "balanced",
+      "design": "ddi",
+      "max_vc": 0.8125,
+      "delay_s": 32.94376908857138,
+      "los": "C",
+      "capacity_reserve": 1.2307692307604157,
+      "nodes": {
+        "crossover": 0.8125,
+        "offramp_merge": 0.59375
+      }
+    },
+    {
+      "case": "balanced",
+      "design": "turbo_roundabout",
+      "max_vc": 0.9684316256926733,
+      "delay_s": 47.83137987707409,
+      "los": "E",
+      "capacity_reserve": 1.0130102358016302,
+      "nodes": {
+        "entry_arterial": 0.9348428921887666,
+        "entry_bridge": 0.7037037037037037,
+        "entry_offramp": 0.9684316256926733
+      }
+    },
+    {
+      "case": "heavy_left",
+      "design": "diamond",
+      "max_vc": 1.265625,
+      "delay_s": 281.3077924824326,
+      "los": "F",
+      "capacity_reserve": 0.7901234567816573,
+      "nodes": {
+        "terminal": 1.265625
+      }
+    },
+    {
+      "case": "heavy_left",
+      "design": "ddi",
+      "max_vc": 0.95625,
+      "delay_s": 58.270079271540894,
+      "los": "E",
+      "capacity_reserve": 1.0457516339829453,
+      "nodes": {
+        "crossover": 0.95625,
+        "offramp_merge": 0.871875
+      }
+    },
+    {
+      "case": "heavy_left",
+      "design": "turbo_roundabout",
+      "max_vc": 3.404370161696501,
+      "delay_s": 495.68869208939725,
+      "los": "F",
+      "capacity_reserve": 0.6222550607708399,
+      "nodes": {
+        "entry_arterial": 1.8061833316676794,
+        "entry_bridge": 1.0333333333333334,
+        "entry_offramp": 3.404370161696501
+      }
+    },
+    {
+      "case": "arterial_dominant",
+      "design": "diamond",
+      "max_vc": 0.76875,
+      "delay_s": 42.376053605589604,
+      "los": "D",
+      "capacity_reserve": 1.3008130081288982,
+      "nodes": {
+        "terminal": 0.76875
+      }
+    },
+    {
+      "case": "arterial_dominant",
+      "design": "ddi",
+      "max_vc": 1.0375,
+      "delay_s": 94.38329294468063,
+      "los": "F",
+      "capacity_reserve": 0.9638554216780904,
+      "nodes": {
+        "crossover": 1.0375,
+        "offramp_merge": 0.61875
+      }
+    },
+    {
+      "case": "arterial_dominant",
+      "design": "turbo_roundabout",
+      "max_vc": 0.9455392731739339,
+      "delay_s": 41.80461228777165,
+      "los": "E",
+      "capacity_reserve": 1.0208728307407,
+      "nodes": {
+        "entry_arterial": 0.91281244131052,
+        "entry_bridge": 0.7333333333333333,
+        "entry_offramp": 0.9455392731739339
+      }
+    }
+  ],
+  "monte_carlo_2045": {
+    "balanced": {
+      "diamond": 0.6125,
+      "ddi": 0.69085,
+      "turbo_roundabout": 0.94375,
+      "median_factor": 1.3487187610966025
+    },
+    "heavy_left": {
+      "diamond": 0.99875,
+      "ddi": 0.92085,
+      "turbo_roundabout": 1.0,
+      "median_factor": 1.3487187610966025
+    },
+    "arterial_dominant": {
+      "diamond": 0.57785,
+      "ddi": 0.96925,
+      "turbo_roundabout": 0.93865,
+      "median_factor": 1.3487187610966025
+    }
+  },
+  "benchmark": {
+    "scenarios": 1000000,
+    "designs": 3,
+    "seconds": 2.7070325999957277,
+    "evaluations_per_s": 1108224.555553832
+  }
+}
